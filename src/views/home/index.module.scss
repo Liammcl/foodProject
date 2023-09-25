@@ -1,0 +1,134 @@
+.container {
+  background-color: #fff;
+  position: relative;
+  height: calc(100vh - 40px);
+  overflow: hidden;
+  box-sizing: border-box;
+  @media screen and (width > 1000px) {
+    height: calc(100vh - 20px);
+  }
+
+  .main {
+    background-color: #efede6;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-bottom: 10px;
+
+    .item {
+      margin-bottom: 10px;
+      border-radius: 6px;
+      box-sizing: border-box;
+      border-bottom: 1px solid #e6e6e7;
+      padding: 10px 15px;
+      font-size: 16px;
+      width: 90%;
+      margin: 15px auto;
+
+      font-size: 14px;
+      word-wrap: break-word;
+      color: #000;
+      line-height: 17px;
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 0.5px,
+        rgba(0, 0, 0, 0.024) 0px 0px 5px, rgba(0, 0, 0, 0.05) 0px 1px 2px;
+
+      @media screen and (width > 1000px) {
+        font-size: 3px;
+        padding: 2px 5px;
+        width: 75%;
+        border-radius: 3px;
+        margin: 3px auto;
+        line-height: 6px;
+      }
+      &:last-child {
+        margin-bottom: 100px;
+        @media screen and (width > 1000px) {
+          margin-bottom: 40px;
+        }
+      }
+      .itemWarp {
+        display: flex;
+        justify-content: start;
+
+        img {
+          width: 25px;
+          height: 25px;
+          margin-right: 10px;
+          @media screen and (width > 1000px) {
+            width: 8px;
+            height: 8px;
+            margin-right: 4px;
+          }
+        }
+      }
+    }
+  }
+  .bottom {
+    background-color: #fff;
+    position: absolute;
+    bottom: 10px;
+    width: 80%;
+    left: 0;
+    transform: translateX(9%);
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 0.5px,
+      rgba(0, 0, 0, 0.024) 0px 0px 5px, rgba(0, 0, 0, 0.05) 0px 1px 2px;
+    @media screen and (width > 1000px) {
+      border-radius: 3px;
+      bottom: 5px;
+    }
+    .inputItem {
+      display: flex;
+      justify-content: space-around;
+      padding: 2px 3px;
+      align-items: center;
+      :global(.adm-text-area) {
+        @media screen and (width > 1000px) {
+          --adm-font-size-9: 5px;
+        }
+      }
+      .input {
+        flex: 70%;
+      }
+      .btn {
+        font-size: 16px;
+        background-color: #5645a1;
+        display: inline-flex;
+        border-radius: 3px;
+        padding: 2px 3px;
+        margin: 0 5px;
+        cursor: pointer;
+        @media screen and (width > 1000px) {
+          font-size: 6px;
+          border-radius: 2px;
+          margin: 0 2px;
+        }
+      }
+    }
+  }
+}
+.loadingview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (width > 1000px) {
+    font-size: 3px;
+  }
+}
+.loadingBtn {
+  margin-top: 5px;
+  padding: 3px 5px;
+  border-radius: 4px;
+  background-color: #0075ff;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  @media screen and (width > 1000px) {
+    font-size: 3px;
+    margin-top: 10px;
+    border-radius: 2px;
+  }
+}
